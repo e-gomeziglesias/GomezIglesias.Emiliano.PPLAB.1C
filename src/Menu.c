@@ -131,10 +131,10 @@ int MostrarMenuInformes(void)
 	printf("		MENU DE INFORMES\n\n");
 	printf("1-PEDIDOS PENDIENTES PARA UNA LOCALIDAD\n");
 	printf("2-CANTIDAD DE KILOS DE POLIPROPILENO RECICLADO PROMEDIO POR CLIENTE\n");
+	printf("3-Cliente con más pedidos pendientes.\n");
+	printf("4-Cliente con más pedidos completados\n");
+	printf("5-Cliente con más pedidos.\n");
 	/*
-		printf("3-\n");
-		printf("4-\n");
-		printf("5-\n");
 		printf("6-\n");
 		printf("7-\n");
 		printf("8-\n");
@@ -145,7 +145,7 @@ int MostrarMenuInformes(void)
 		printf("13-\n");
 	*/
 	printf("0-VOLVER\n");
-	CargarEntero(&opcion, "Ingrese opcion: ", "La opcion ingresada es invalida.", 0, 2, 2);
+	CargarEntero(&opcion, "Ingrese opcion: ", "La opcion ingresada es invalida.", 0, 5, 2);
 	return opcion;
 }
 

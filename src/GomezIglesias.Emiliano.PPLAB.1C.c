@@ -271,7 +271,43 @@ int main(void)
 							}
 							system("pause");
 						break;
+						case 3:
+							if(flagPedidos==1 && flagClientes==1)
+							{
+								retorno = MostrarClientesMaximosPendientes(listaClientes, CANT_CLIENTES, listaPedidos, CANT_PEDIDOS, listaLocalidades, CANT_LOCALIDADES);
+								AnalizarRetorno(retorno, "Se muestran los kilos de PP promedio por cliente", "No se pudo completar la solicitud");
+							}
+							else
+							{
+								printf("Antes deben cargarse pedidos y clientes.\n");
+							}
+							system("pause");
+							break;
 
+						case 4:
+							if(flagPedidos==1 && flagClientes==1)
+							{
+								retorno = MostrarClientesMaximosCompletados(listaClientes, CANT_CLIENTES, listaPedidos, CANT_PEDIDOS, listaLocalidades, CANT_LOCALIDADES);
+								AnalizarRetorno(retorno, "Se muestran los kilos de PP promedio por cliente", "No se pudo completar la solicitud");
+							}
+							else
+							{
+								printf("Antes deben cargarse pedidos y clientes.\n");
+							}
+							system("pause");
+							break;
+						case 5:
+							if(flagPedidos==1 && flagClientes==1)
+							{
+								retorno = MostrarClientesMaximos(listaClientes, CANT_CLIENTES, listaPedidos, CANT_PEDIDOS, listaLocalidades, CANT_LOCALIDADES);
+								AnalizarRetorno(retorno, "Se muestran los kilos de PP promedio por cliente", "No se pudo completar la solicitud");
+							}
+							else
+							{
+								printf("Antes deben cargarse pedidos y clientes.\n");
+							}
+							system("pause");
+							break;
 						case 0://VOLVER MENU PRINCIPAL
 							printf("Volviendo al menu principal\n");
 							system("pause");

@@ -71,3 +71,36 @@ int CalcularKilosdePPPromedioPorCliente(ePedido listaPedidos[], int tamPedidos, 
 /// @param tamClientes tamano del listado de clientes
 /// @return 0 si ok, -1 si error
 int MostrarKilosDePPPromedioPorCliente(ePedido listaPedidos[], int tamPedidos, eCliente listaClientes[], int tamClientes);
+
+//5.
+int ContarPedidosPorCliente(eCliente unCliente, ePedido listaPedidos[], int tamPedidos);
+//5.1
+int ContarPedidosPorClienteSegunEstado(eCliente unCliente, ePedido listaPedidos[], int tamPedidos, int estado);
+
+//6.
+int BuscarMaximoDePendientesPorCliente(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, int* pMaximo);
+
+//7.
+int MostrarClientesConCantidadDePendientes(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, eLocalidad listaLocalidades[], int tamListaLocalidades, int cantidad);
+
+
+//8.
+int MostrarClientesMaximosPendientes(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, eLocalidad listaLocalidades[], int tamListaLocalidades);
+
+//9.
+int BuscarMaximoDeCompletadosPorCliente(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, int* pMaximo);
+
+//10.
+int MostrarClientesConCantidadDeCompletados(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, eLocalidad listaLocalidades[], int tamListaLocalidades, int cantidad);
+
+//11.
+int MostrarClientesMaximosCompletados(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, eLocalidad listaLocalidades[], int tamListaLocalidades);
+
+//12.
+int BuscarMaximoDePedidosPorCliente(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, int* pMaximo);
+
+//13.
+int MostrarClientesConCantidadDePedidos(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, eLocalidad listaLocalidades[], int tamListaLocalidades, int cantidad);
+
+//14.
+int MostrarClientesMaximos(eCliente listaClientes[], int tamClientes, ePedido listaPedidos[], int tamPedidos, eLocalidad listaLocalidades[], int tamListaLocalidades);
